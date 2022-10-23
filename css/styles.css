@@ -100,6 +100,8 @@ body{
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
+
+
 }
 
 .logo-studio{
@@ -156,14 +158,32 @@ letter-spacing: 0.02em;
  .auth-nav{
     list-style-type: none;
  }   
-    
-
+ .icon-mail{
+    width: 16px;
+    height: 12px;  
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+ } 
+ .icon-mail:hover,
+ .icon-mail:focus{
+    fill: var(--accent);
+ }  
+.icon-phone{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+.icon-phone:hover,
+.icon-phone:focus{
+    fill: var(--accent);
+}
 
 .auth-nav .item{
-    margin-left: auto;
-    
-    
+    margin-left: auto;    
 }
+
+
 .auth-nav .item+ .item{
     margin-left: 50px;
 }
@@ -181,6 +201,7 @@ line-height: 1.14;
     color:var(--accent) ;
 }
 
+
 /* hero */
 .hero{
     padding: 200px 0;
@@ -191,7 +212,7 @@ line-height: 1.14;
     height: 600px;
     margin-right: auto;
     margin-left: auto;
-    background-image: url(../img/Overlay.png), url(../img/hiro.jpg), url(../img/Bg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hiro.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -274,6 +295,11 @@ cursor: pointer;
 .button-nav .button.secondary:focus{
     color:var(--white) ;
     background-color:var(--accent) ;
+    
+}
+.button-nav:hover,
+.button-nav:focus{
+    box-shadow: 5px 5px;
 }
 
 .button-nav{
@@ -341,11 +367,19 @@ text-transform: uppercase;
   font-size: 14px;
 line-height: 1.71;
 }
-.feature-list .item{
-   
 
-
+.icons{
+    margin-bottom: 30px;
+    background-color: var(--secondary-bgr);
 }
+
+.icon{
+    display: block;
+    height: 120px; 
+    margin-left: auto;  
+    margin-right: auto;
+}
+
 .feature-list .item:not(:last-child){
     margin-right: 30px;
 }
@@ -425,6 +459,42 @@ border-radius: 0px 0px 4px 4px;
 .stuff-name{
     padding: 30px 0;
 }
+.s-links{
+    display: flex;
+    
+    width: 206px;
+    height: 44px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 16px;
+}
+.s-links .item{
+    width: 44px;
+    height: 44px;
+margin-right: 10px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    outline: 1px solid brown;
+
+}
+.s-links .item:hover,
+.s-links .item:focus{
+    fill: var(--white);
+    background-color: var(--accent);
+}
+
+.s-links .item:last-child{
+    margin-right: 0;
+}
+
+.icon-sl{
+    width: 20px;
+    height: 20px; 
+    
+}
+
+
 /* project */
 
 .project{
@@ -436,9 +506,10 @@ border-radius: 0px 0px 4px 4px;
 }
 .project-name{
     width: 370px;
-    
-    
-      
+        
+}
+.project-name:hover{
+    box-shadow: 5px 5px;
 }
 .project-name:nth-child(3n){
     margin-right: 0px;
@@ -478,7 +549,53 @@ line-height: 1.88;
 letter-spacing: 0.03em;
 
 }
-
+.clients{
+    padding-top: 94px;
+}
+.clients .item{
+    display: flex;
+    
+    
+    
+}
+.clients .name:last-child{
+    margin-right: 0;
+}
+.clients .name{
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+    
+    border: 2px solid black;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 94px;
+    
+}
+.cl1{
+    width: 41px;
+    height: 47px;
+}
+.cl2{
+    width: 40px;
+    height: 52px;
+}
+.cl3{
+    width: 43px;
+    height: 41px;
+}
+.cl4{
+    width: 84px;
+    height: 41px;
+}
+.cl5{
+    width: 63px;
+    height: 45px;
+}
+.cl6{
+    width: 106px;
+    height: 60px;
+}
 .adress .adress-link{
     color:var(--white);
     font-weight: 400;
@@ -551,4 +668,18 @@ line-height: 1.19;
 .footer{
     background-color:var(--bgr-footer-hiro) ;
     padding: 60px 0;
+}
+
+.footer-link .s-links{
+    fill: var(--white);
+}
+.social-link{
+    display: flex;
+    margin-left: 70px;
+    
+
+}
+.footer-item{
+    text-transform: uppercase;
+    color: var(--white);
 }
