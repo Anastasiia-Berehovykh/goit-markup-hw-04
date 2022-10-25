@@ -273,7 +273,6 @@ cursor: pointer;
 .button.secondary{
     padding: 6px 22px;
     background-color: var(--secondary-bgr);
-    
     color:var(--title-text-color);
     background-color:var(--secondary-bgr);
     font-family: 'Roboto';
@@ -281,17 +280,18 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
-
 letter-spacing: 0.03em;
 cursor: pointer;
+
 }
 
 
 .button.secondary:hover,
 .button.secondary:focus{
+    box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
     color:var(--white) ;
     background-color:var(--accent) ;
-    box-shadow: 5px 5px;
+    
 }
 
 
@@ -509,12 +509,12 @@ border-radius: 0px 0px 4px 4px;
 .project{
     display: flex;
     flex-wrap: wrap;
-    
     gap: 30px;
     
 }
 .project .link{
     display: block;
+    
 }
 .project .link:hover{
     box-shadow: 5px 5px;
